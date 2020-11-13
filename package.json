@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-postgresql",
+  "version": "1.0.0",
+  "description": "auht implements postgresql",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "camiloaceve"
+  },
+  "author": "Camilo Acevedo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "pg": "^8.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
