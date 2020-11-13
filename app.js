@@ -37,6 +37,18 @@ app.post('users/register', (req, res) => {
     if (!name || !email || !password || password2) {
         errors.push({message: "Please enter all fields"})
     }
+
+    if (password.length < 8) {
+        errors.push({ message: "Password should be at least 8 characters"});
+    }
+
+    if (!password != password2) {
+        errors.push({ message: "Passwords do not match"});
+    }
+
+    if (errors.length > 0) {
+        res.render("register", { errors });
+    }
 });
 
 app.listen(PORT, () => {
