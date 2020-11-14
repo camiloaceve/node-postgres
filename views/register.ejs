@@ -10,10 +10,9 @@
     <h1>Register</h1>
 
     <ul>
-        <% if(typeof errors != 'undefined') { %> 
-            <% errors.forEach(error=>{ %>
+        <% if (typeof errors != 'undefined') { %> <% errors.forEach(error => { %>
             <li><%= error.message %></li>
-        <% }) %> <% } %>
+            <% }) %> <% } %>
     </ul>
 
     <form action="/users/register" method="POST">
@@ -36,6 +35,7 @@
     <div>
         <input type="submit" value="Register">
     </div>
+
     <a href="/users/login">Already registered? Login here</a>
     </form>
 </body>
